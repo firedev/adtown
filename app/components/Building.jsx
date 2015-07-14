@@ -1,5 +1,6 @@
 import React from 'react';
 import Floor from './Floor';
+import Advert from './Advert';
 import classNames from 'classnames';
 
 var Building = React.createClass({
@@ -32,6 +33,7 @@ var Building = React.createClass({
       <div
         onClick={this.props.onClick}
         className={classNames(classes)}>
+        {this.props.owned ? <Advert /> : null}
         {this.renderFloors()}
       </div>
     );
