@@ -23,6 +23,10 @@ var common = {
         loaders: ['style', 'css']
       },
       {
+        test: /\.sass$/,
+        loader: "style!css!sass?indentedSyntax"
+      },
+      {
         test: /\.jsx?$/,
         loader: 'babel?stage=1',
         include: path.resolve(ROOT_PATH, 'app')

@@ -1,5 +1,5 @@
 require('basscss/css/basscss.css');
-require('../css/application.css');
+require('../sass/application.sass');
 
 import React from 'react';
 import App from './components/App';
