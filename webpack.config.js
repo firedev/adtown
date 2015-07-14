@@ -12,7 +12,7 @@ var common = {
     extensions: ['', '.js', '.jsx']
   },
   output: {
-    path: path.resolve(ROOT_PATH, 'public'),
+    path: path.resolve(ROOT_PATH, 'build'),
     filename: 'bundle.js'
   },
 

@@ -12,7 +12,7 @@ var App = React.createClass({
             </div>
           </div>
           <div className="center absolute bottom-0 left-0 right-0">
-            <img src="arrow.png" className="mx-auto" />
+            <img src="assets/arrow.png" className="mx-auto" />
           </div>
         </div>
       );
