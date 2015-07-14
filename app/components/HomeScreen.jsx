@@ -34,7 +34,7 @@ var HomeScreen = React.createClass({
       </div>
       <div className="ground">
         <div className="center p1">
-          <div className="h1 bold">AdTown</div>
+          <div className="h1 bold mt1">AdTown</div>
           <p>
             <b>Tap buildings</b> to own then
           </p>

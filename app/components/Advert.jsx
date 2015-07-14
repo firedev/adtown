@@ -11,7 +11,6 @@ export default class Advert extends React.Component {
   }
 
   renderImagePath() {
-    console.log(this.state);
     return "assets/logos/" + this.state.ad.image + ".png";
   }
 
