@@ -3,7 +3,7 @@ var path = require('path');
 var file = path.resolve(__dirname, 'build/bundle.js');
 
 var hash = bust.alias(file).split('/');
-bust(file);
+bust(file, { remove: true});
 
 var replace = require('replace-in-file');
 
