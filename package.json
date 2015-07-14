@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "TARGET=build webpack",
+    "build": "TARGET=build webpack && node bust.js",
     "start": "TARGET=dev webpack-dev-server --devtool eval --progress --colors --hot",
     "open": "open http://localhost:8080/webpack-dev-server"
   },
@@ -14,6 +14,7 @@
     "babel-core": "^5.6.15",
     "babel-loader": "^5.3.1",
     "basscss": "^7.0.0",
+    "cache-bust": "0.0.2",
     "css-loader": "^0.15.2",
     "flowcheck": "^0.2.7",
     "flowcheck-loader": "^1.0.0",
@@ -21,6 +22,7 @@
     "node-libs-browser": "^0.5.2",
     "node-sass": "^3.2.0",
     "react-hot-loader": "^1.2.8",
+    "replace-in-file": "^0.2.1",
     "sass-loader": "^1.0.2",
     "style-loader": "^0.12.3",
     "webpack": "^1.10.1",
