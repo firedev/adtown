@@ -1,5 +1,5 @@
 import React from 'react';
-import Building from './Building'
+import Building from './Building';
 
 var Buildings = React.createClass({
   getDefaultProps: function() {

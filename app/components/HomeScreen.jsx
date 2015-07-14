@@ -1,11 +1,14 @@
 import React from 'react';
-import Street from './Street';
+import Buildings from './Buildings';
 
 var HomeScreen = React.createClass({
   render: function() {
     return <div className="holder">
       <div className="sky">
-        <Street />
+        <Buildings
+          buildings={this.props.buildings}
+          onClick={this.props.onBuildingClick}
+        />
       </div>
       <div className="ground">
         <div className="p1">

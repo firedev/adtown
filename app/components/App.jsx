@@ -2,6 +2,23 @@ import React from 'react';
 import HomeScreen from './HomeScreen';
 
 var App = React.createClass({
+  componentWillMount() {
+    var buildings = [];
+    for(var i = 0; i < 100; i++) {
+      buildings.push({
+        floors: parseInt(Math.random() * 7 + 3),
+        apartments: parseInt(Math.random() * 7 + 3),
+        owned: (Math.random() > 0.7)
+      });
+    }
+    this.setState({ buildings: buildings });
+  },
+
+  handleBuildingClick(i) {
+    this.state.buildings[i].owned = true;
+    this.forceUpdate();
+  },
+
   render() {
     if(window.navigator.standalone === false) {
       return (
@@ -17,7 +34,9 @@ var App = React.createClass({
         </div>
       );
     } else {
-      return <HomeScreen />;
+      return <HomeScreen
+        buildings={this.state.buildings}
+        onBuildingClick={this.handleBuildingClick}/>;
     }
   }
 });
